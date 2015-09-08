@@ -6,7 +6,7 @@
         .module('ShopkinsApp')
         .controller('ShopkinsViewerController',ShopkinsViewerController);
 
-    ShopkinsViewerController.$inject=['ShopkinsViewerService'];
+    //ShopkinsViewerController.$inject=['ShopkinsViewerService'];
 
     function ShopkinsViewerController(ShopkinsViewerService){
         var vm = this;
