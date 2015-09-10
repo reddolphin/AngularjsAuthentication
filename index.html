@@ -3,26 +3,29 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Saf-Bannanna's Shopkins Page!</title>
+
+
+    <link rel="stylesheet" href="assetts/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+
 </head>
 <body ng-app="ShopkinsApp" ng-controller="ApplicationController">
-    <div id="mainContainer">
-        <div class="row">
-            <div class="col-md-3">
-                <ul class="nav">
-                    <li><a href="#login"> login </a></li>
-                    <li><a href="#signup"> signup</a></li>
-                    <li><a href="#home"> home</a></li>
-                    <li><a href="#shopkinsviewer"> shopkinsviewer</a></li>
-                </ul>
-            </div>
-            <div class="col-md-9">
-                <div ng-view></div>
-            </div>
-        </div>
-    </div>
-
+    <nav>
+        <ul>
+            <li><a href="#login"> login </a></li>
+            <li><a href="#signup"> signup</a></li>
+            <li><a href="#home"> home</a></li>
+            <li><a href="#shopkinsviewer"> shopkinsviewer</a></li>
+        </ul>
+    </nav>
+    <div id="loginDetails">Currently logged in ID: {{currentUser.id}}</div>
+    <main>
+        <div ng-view></div>
+    </main>
+    <article>
+        Authentication created using information from: <a href="https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec">Techniques for authentication in AngularJS applications</a>
+    </article>
 
 
     <script src="app/app.module.js"></script>

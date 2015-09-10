@@ -1,0 +1,43 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    margin: 2px;
+    padding: 20px;
+    color : #fffbff;
+}
+
+nav a:hover {
+    background-color: #80878a;
+}
+
+nav {
+    background-color: #656B6D;
+}
+
+html {
+    background: linear-gradient(to bottom, rgb(179, 193, 248) 0%, rgb(211, 254, 247) 62%, rgb(193, 191, 254) 100%);
+    height: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+main {
+    position: relative;
+    margin : 50px;
+    height: 50%;
+    background: rgb(255, 251, 255);
+    padding: 10px;
+}
